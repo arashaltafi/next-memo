@@ -62,10 +62,12 @@ export default function Home() {
       }
 
       if (images.filter(image => !image.disable).length === 0) {
-        const successCount = parseInt(localStorage.getItem('image-memo-success') || '0') + 1
-        localStorage.setItem('image-memo-success', successCount.toString())
-        showToast('good job!', 'success')
-        showToast('Your number of wins: ' + localStorage.getItem('image-memo-success') || '0', 'success')
+        if (typeof window !== 'undefined') {
+          const successCount = parseInt(localStorage.getItem('image-memo-success') || '0') + 1
+          localStorage.setItem('image-memo-success', successCount.toString())
+          showToast('good job!', 'success')
+          showToast('Your number of wins: ' + localStorage.getItem('image-memo-success') || '0', 'success')
+        }
         setImages(getImageList())
       }
     }
@@ -100,7 +102,10 @@ export default function Home() {
           }
         </div>
 
-        <h3 className="text-center text-lg sm:text-xl md:text-2xl text-white">Your number of wins: {localStorage.getItem('image-memo-success') || '0'}</h3>
+        {
+          (typeof window !== 'undefined') &&
+          <h3 className="text-center text-lg sm:text-xl md:text-2xl text-white">Your number of wins: {localStorage.getItem('image-memo-success') || '0'}</h3>
+        }
       </main>
     </>
   )
