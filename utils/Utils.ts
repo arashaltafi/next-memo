@@ -1,71 +1,103 @@
-type imageListType = { id: number; src: string; isShow: boolean; }[]
+type imageListType = { id: number, imageId: number, src: string, isShow: boolean, disable: boolean }[]
 
 const getImageList = (): imageListType => {
     const imageList: imageListType = [
         {
             id: 1,
+            imageId: 1,
             src: '/memes/01.jpg',
-            isShow: false
+            isShow: false,
+            disable: false
         }, {
             id: 2,
-            src: '/memes/02.jpg',
-            isShow: false
+            imageId: 1,
+            src: '/memes/01.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 3,
-            src: '/memes/03.jpg',
-            isShow: false
+            imageId: 2,
+            src: '/memes/02.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 4,
-            src: '/memes/04.jpg',
-            isShow: false
+            imageId: 2,
+            src: '/memes/02.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 5,
-            src: '/memes/05.jpg',
-            isShow: false
+            imageId: 3,
+            src: '/memes/03.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 6,
-            src: '/memes/06.jpg',
-            isShow: false
+            imageId: 3,
+            src: '/memes/03.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 7,
-            src: '/memes/07.jpg',
-            isShow: false
+            imageId: 4,
+            src: '/memes/04.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 8,
-            src: '/memes/08.jpg',
-            isShow: false
+            imageId: 4,
+            src: '/memes/04.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 9,
-            src: '/memes/09.jpg',
-            isShow: false
+            imageId: 5,
+            src: '/memes/05.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 10,
-            src: '/memes/10.jpg',
-            isShow: false
+            imageId: 5,
+            src: '/memes/05.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 11,
-            src: '/memes/11.jpg',
-            isShow: false
+            imageId: 6,
+            src: '/memes/06.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 12,
-            src: '/memes/12.jpg',
-            isShow: false
+            imageId: 6,
+            src: '/memes/06.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 13,
-            src: '/memes/13.jpg',
-            isShow: false
+            imageId: 7,
+            src: '/memes/07.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 14,
-            src: '/memes/14.jpg',
-            isShow: false
+            imageId: 7,
+            src: '/memes/07.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 15,
-            src: '/memes/15.jpg',
-            isShow: false
+            imageId: 8,
+            src: '/memes/08.jpg',
+            isShow: false,
+            disable: false
         }, {
             id: 16,
-            src: '/memes/16.jpg',
-            isShow: false
+            imageId: 8,
+            src: '/memes/08.jpg',
+            isShow: false,
+            disable: false
         }
     ]
 

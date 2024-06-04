@@ -10,4 +10,30 @@
   body {
     @apply bg-slate-900;
   }
+
+  /* WebKit (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    @apply w-0.5 sm:w-1 md:w-2
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-500 rounded-sm;
+  }
+
+  /* Firefox */
+  ::-moz-scrollbar {
+    @apply w-0.5 sm:w-1 md:w-2
+  }
+
+  ::-moz-scrollbar-track {
+    @apply bg-slate-800;
+  }
+
+  ::-moz-scrollbar-thumb {
+    @apply bg-slate-500 rounded-sm;
+  }
 }
